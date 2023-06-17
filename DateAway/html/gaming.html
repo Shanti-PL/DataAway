@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/gaming.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+          integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+            integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+            crossorigin=""></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+<img id="quit_game" src="../image/close.png" alt="close pop window">
+
+<section class="quit_game">
+    <p>Do you want quit the game?</p>
+
+    <div>
+        <a href="index.html">
+            <button>
+                <p>Yes</p>
+            </button>
+        </a>
+        
+        
+
+        <a id="close_quit_window">
+            <button>
+                <p>No</p>
+            </button>
+        </a>
+
+    </div>
+</section>
+
+<section class="heart-setting-bar">
+    <div id="hearts">
+        <img id="heart1" src="../image/heart.png" alt="red heart">
+        <img id="heart2" src="../image/heart.png" alt="red heart">
+        <img id="heart3" src="../image/heart.png" alt="red heart">
+        <!-- https://www.flaticon.com/free-icon/hearts_2338389?term=hearts&page=1&position=37&page=1&position=37&related_id=2338389&origin=search -->
+    </div>
+
+    <div id="setting">
+        <img src="../image/setting.png" alt="setting">
+        <!-- https://www.flaticon.com/free-icon/configuration_5065975?term=set&page=1&position=9&page=1&position=9&related_id=5065975 -->
+    </div>
+
+
+
+</section>
+
+<div class="setting">
+    <h2>Setting</h2>
+    <img src="../image/close.png" alt="close pop window">
+    <div id="settingContent">
+
+        <form class="settingLayout">
+            <label class="headLabel">Music</label>
+            <div class="options">
+                <div>
+                    <input type="radio" id="yes" name="music" value="yes" >
+                    <label for="yes">Yes</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="no" name="music" value="no" checked>
+                    <label for="No">No</label>
+                </div>
+
+            </div>
+
+        </form>
+
+
+        <form class="settingLayout" action="">
+            <label for="volume" class="headLabel">Volume</label>
+            <!-- <audio autoplay="autoplay" src="../music/Jazzhop Love _ Lofi Hip Hop Mix (mp3cut.net).mp3"  controls="controls" loop="loop"></audio> -->
+            <input type="range" id="volume" name="volume" min="0" max="100" step="10">
+        </form>
+
+        <form class="settingLayout" action="">
+            <label class="headLabel">Notifications</label>
+
+            <div class="options">
+                <div>
+                    <input type="radio" id="Nyes" name="notifications" value="yes" checked>
+                    <label for="Nyes">Yes</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="Nno" name="notifications" value="no">
+                    <label>No</label>
+                </div>
+            </div>
+
+
+        </form>
+
+    </div>
+</div>
+
+<section class="map-info">
+    <h2>Park</h2>
+    <div id="map"></div>
+    <!--            <img id="nextButton" src="../image/reply-message.png">-->
+</section>
+
+<section class="event-info">
+    <h2>Event</h2>
+
+    <div class="event-info-body">
+        <!--image-->
+        <div id="event-img">
+<!--            <img id='event-img-src' src="" alt="event image">-->
+        </div>
+        <!--information-->
+        <div id="event-body-right">
+            <!--title-->
+            <article id="event-title">
+                <h3>Title:</h3>
+                <p></p>
+            </article>
+
+            <!--location-->
+            <article id="event-location">
+                <h3>Location:</h3>
+                <p></p>
+            </article>
+            <!--description-->
+            <article id="event-start-date">
+                <h3>Start Date:</h3>
+                <p></p>
+            </article>
+
+            <article id="event-end-date">
+                <h3>End Date:</h3>
+                <p></p>
+            </article>
+
+        </div>
+    </div>
+
+</section>
+
+
+<section class="person-text">
+    <div id="person">
+        <img src="../image/female_normal.png" alt="women-NPC">
+    </div>
+
+    <section id="nameText">
+        <div id="name">
+            <h3>Samantha</h3>
+        </div>
+
+        <article id="text">
+            <p id="text_content">Text</p>
+
+
+            <div id="buttons" class="btn-grid">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+            </div>
+            <!--                    <button id="next">Next</button>-->
+        </article>
+    </section>
+
+    <audio autoplay loop id="BGM">
+        <source src="../music/Jazzhop Love _ Lofi Hip Hop Mix (mp3cut.net).mp3">
+    </audio>
+</section>
+<script src="../js/game.js"></script>
+</body>
+</html>

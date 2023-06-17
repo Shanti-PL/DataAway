@@ -1,0 +1,66 @@
+body {
+    background-image:url(../image/brisbane-background.webp) ;
+
+}
+
+h1 {
+    position:absolute;
+    left:50%;
+    top: 14%;
+    transform: translate(-50%, -50%);
+    width: 45vw;
+    height: 20vh;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    color: white;
+    text-shadow: 7px 6px 10px purple;
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+
+}
+.content{
+    position: absolute;
+    left: 6%;
+    top: 15%;
+
+}
+
+section{
+
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 3em 0em;
+    padding: 1em;
+
+}
+
+img{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 40%;
+}
+
+/* 
+go back */
+
+#go-back {
+    position:absolute;
+    top: 13%;
+    left: 5%;
+    padding:5px;
+    border-radius: 5px;
+    border-radius: 15px;
+    width: 2em;
+    height: 2em;
+}
+
+#go-back:hover{
+    background-color: rgb(255 151 235 / 43%);
+}
+
+#go-back img{
+    width: 2em;
+    height: 2em;
+} 

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+		<title>DECO1800/7180 A3 MVP</title>
+		<link rel="stylesheet" href="../css/gallery.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+    </head>
+    <body>
+        <section>
+            <div id="title">
+                <h1>Gallery</h1>
+            </div>
+            
+            <ul id="choices">
+                <li id="character">Characters</li>
+                <li id="location">Locations</li>
+            </ul>
+
+            <!-- Characters -->
+            <div class="character">
+                <div id="chooseGender">
+                    <button id="female">
+                        <img src="../image/womens-day.png" alt="female sign">
+                    </button>
+
+                    <button id="male">
+                        <img src="../image/male.png" alt="female sign">
+                    </button>
+                </div>
+
+                <div class="characterInfo">
+                    <div>
+                        <img src="../image/female_happy.png" alt="female character">
+                    </div>
+                    
+                    <article id="Cinfo">
+                        <h2>Samantha Jones</h2>
+
+                        <ul>
+                            <li id="li-1">She loves being outside in nature and grealty values a person who seeks out adventure</li>
+                            <li id="li-2">Highly educated, likes books and such</li>
+                        </ul>
+                    </article>
+                </div>
+
+            </div>
+
+            <!-- Locations -->
+
+            <div class="location">
+            <!-- park-->
+                <div class="park">
+                    <img src="../image/park.jpeg" alt="park image">
+
+                    <article id="park_article">
+                        <div id="park_name">
+                            <h2>Name: </h2>
+                            <p></p>
+                        </div>
+
+                        <div id="park_address">
+                            <h2>Location:</h2>
+                            <p></p>
+                        </div>
+                    </article>
+                </div>
+<!--                art-->
+
+                <div class="art">
+                    <img src="../image/art.jpeg">
+
+                    <article id="art_article">
+                        <div id="art_name">
+                            <h2>Name: </h2>
+                            <p></p>
+                        </div>
+
+                        <div id="art_author">
+                            <h2>Artist: </h2>
+                            <p></p>
+                        </div>
+
+                        <div id="art_location">
+                            <h2>Location:</h2>
+                            <p></p>
+                        </div>
+                    </article>
+                </div>
+
+            <!-- event -->
+                <div class="event">
+                    <img id="event_img_gallery">
+
+                    <article id="event_article">
+                        <div id="event_name">
+                            <h2>Name: </h2>
+                            <p></p>
+                        </div>
+
+                        <div id="event_location">
+                            <h2>Location:</h2>
+                            <p></p>
+                        </div>
+
+                        <div id="event_start">
+                            <h2>Start date:</h2>
+                            <p></p>
+                        </div>
+
+                        <div id="event_end">
+                            <h2>End date:</h2>
+                            <p></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+        </section>
+
+        <a href="index.html">
+            <img src="../image/return.png" alt="return to home page" id="return">
+        </a>
+
+        <audio autoplay loop id="BGM">
+			<source src="../music/Jazzhop Love _ Lofi Hip Hop Mix (mp3cut.net).mp3">
+	    </audio>
+        
+        <div id="heart1">
+            <img class =  'heart' src="../image/heart.png" alt="red heart icon">
+          </div>
+          <div id="heart2">
+            <img class="hearts" src="../image/hearts.png" alt="red heart icon">
+          </div>
+          <div id="heart3">
+            <img class="hearts" src="../image/hearts.png" alt="red heart icon">
+            
+          </div>
+          <div id="heart4">
+            <img class =  'heart' src="../image/heart.png" alt="red heart icon">
+          </div>
+
+
+          <script src="../js/gallery.js"></script>
+    </body>
+</html>

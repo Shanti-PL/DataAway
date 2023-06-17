@@ -1,0 +1,237 @@
+body {
+    background-image:url(../image/brisbane-background.webp) ;
+}
+
+/* main content */
+
+section{
+    height: 90%;
+    width: 68%;
+    position: absolute;
+    top: 5%;
+    left: 17%;
+}
+
+#title{
+    background-color: #ffc0cb;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    padding: 5px;
+    border: solid 2px;
+    border-color: white;
+    
+}
+h1{
+    margin: 0;
+ 
+}
+
+
+#choices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 8%;
+    margin-bottom: 0;
+    padding: 0;
+
+    
+}
+#choices li{
+    display: block;
+    background-color: #ffc0cb;
+    padding: 12px 54px;
+    color: white;
+    font-size: 20px;
+    border: solid 2px;
+    border-color: white;
+
+}
+
+/* character */
+
+/* buttons */
+.character, .location, .favourites{
+    height: 74%;
+    background-color: rgba(255, 255, 255, 0.8);
+
+}
+.character{
+    display: block;
+}
+
+#chooseGender{
+    height: 8%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    flex-direction: row;
+
+}
+#chooseGender button{
+    height: 100%;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: solid 2px;
+    border-color: white;
+}
+
+#chooseGender button:hover{
+    background-color: #ffc0cb;
+}
+
+#chooseGender img{
+    width: 3em;
+    height: 2.5em;
+}
+
+/* character information */
+.characterInfo{
+    display: flex;
+    flex-direction: row;
+    height: 92%;
+
+}
+
+.characterInfo div{
+    position: relative;
+    top: 5%;
+    width: 20%;
+    height: 90%;
+    margin: 0 6%;
+
+}
+.characterInfo div img{
+    height: 100%;
+    width: 85%;
+}
+
+#Cinfo{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    width: 60%;
+}
+
+#Cinfo ul{
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    margin-left: 2%;
+    justify-content: space-around;
+}
+
+/*location*/
+.location{
+    width: 100%;
+    display: none;
+    background: rgba(255, 255, 255, 0.4);
+    position: relative;
+    overflow: scroll;
+
+}
+
+.park, .art, .event{
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    line-height: 4px;
+    margin: 3%;
+
+
+}
+.park img, .art img,.event img{
+    width: 40%;
+
+}
+.park article, .art article,.event article{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    padding-left: 1em;
+}
+.park{
+    background: white;
+    height: 30%;
+
+}
+.art{
+    height: 30%;
+    background: white;
+
+}
+.event{
+    height: 40%;
+    background: white;
+}
+
+#park_article div, #art_article div, #event_article div{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#park_article p, #art_article p, #event_article p {
+    padding-left: 2%;
+}
+
+.favourites{
+    width: 100%;
+    display: none;
+    background: wheat;
+    position: relative;
+
+
+}
+
+
+
+
+/* image */
+#return{
+    position: absolute;
+    top: 90%;
+    right: 92%;
+    width: 3em;
+}
+
+
+#heart1{
+    position: absolute;
+    top: 21%;
+    left: 4%;
+    transform: rotate(-13deg);
+}
+
+#heart2{
+    position: absolute;
+    top: 4%;
+    left: 86%;
+    transform: rotate(31deg);
+}
+
+#heart3{
+    position: absolute;
+    top: 2%;
+    left: 7%;
+    transform: rotate(-18deg);
+}
+
+#heart4{
+    position: absolute; 
+    top: 27%;
+    left: 90%;
+    transform: rotate(40deg);
+}
+
+.heart{
+    width: 6em;
+    height: 6em;
+}
+
+.hearts{
+    width: 9em;
+    height: 9em;
+}

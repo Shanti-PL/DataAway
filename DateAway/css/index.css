@@ -1,0 +1,225 @@
+body {
+    background-image:url(../image/brisbane-background.webp) ;
+}
+
+h1 {
+    position:absolute;
+    left:50%;
+    top: 28%;
+    transform: translate(-50%, -50%);
+    width: 45vw;
+    height: 20vh;
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    color: white;
+    text-shadow: 7px 6px 10px purple;
+    margin: 0;
+    padding: 0;
+    font-size: 5em;
+
+}
+
+h2 {
+    font-family: "Sofia", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+} 
+
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 4.5em;
+    position: absolute;
+    top:47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section button{
+    background-color: blueviolet;
+    color: white;
+    width: 10em;
+    height: 2em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    border: 0;
+    padding: 10px 0;
+}
+
+button:hover{
+    background-color:rgb(255, 173, 240);
+    box-shadow: 8px 7px rgb(214, 98, 192);
+}
+
+#heart1{
+    position: absolute;
+    top: 21%;
+    left: 4%;
+    transform: rotate(-13deg);
+}
+
+#heart2{
+    position: absolute;
+    top: 4%;
+    left: 86%;
+    transform: rotate(31deg);
+}
+
+#heart3{
+    position: absolute;
+    top: 2%;
+    left: 7%;
+    transform: rotate(-18deg);
+}
+
+#heart4{
+    position: absolute; 
+    top: 27%;
+    left: 90%;
+    transform: rotate(40deg);
+}
+
+.heart{
+    width: 6em;
+    height: 6em;
+}
+
+.hearts{
+    width: 9em;
+    height: 9em;
+}
+
+
+.setting{
+    width: 60%;
+    height: 30%;
+    background-color: #ffffffbf;
+    position: absolute;
+    top: 41%;
+    left:19%;
+    display: none;
+    
+
+}
+
+.setting h2{
+    text-align: center;
+    padding: 10px;
+    background-color: #ffc0cb;
+}
+
+#settingContent{
+    width: 100%;
+    height: 87%;
+    display: flex;
+    flex-direction: column;
+}
+.settingLayout{
+    padding: 30px 20%;
+    padding-bottom: 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.headLabel{
+    padding-right: 43%;
+}
+
+
+.options{
+    display: flex;
+    flex-direction: row;
+}
+.options div{
+    padding-right: 20px;
+}
+
+.setting img{
+    position: absolute;
+    top: 130%;
+    right: 110%;
+    width: 3em;
+}
+
+/* how to play */
+
+#howToPlay{
+    height: 85%;
+    width: 90%;
+    display: none;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+}
+
+#howToPlay img{
+    width: 3em;
+}
+
+/* first two block */
+#firstTwo{
+    width: 70%;
+    height: 50%;
+    position: relative;
+    left: 15%;
+    text-align: center;
+}
+
+#firstTwoTitle{
+    position: relative;
+    background-color: pink;
+    color: white;
+    padding: 10px 0;
+    font-size: 2em;
+}
+
+#firstTwo ul{
+    margin-top: 4%;
+    background-color: #ffffffde;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    overflow: auto;
+
+}
+
+#secondTwo{
+    height: 50%;
+    position: relative;
+    
+}
+
+/* second two block */
+
+#steps{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#steps article{
+    background-color: #ffffffed;
+    padding: 0px 15px;
+    margin: 1%;
+    font-size: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+#tips{
+    background-color: #ffffffed;
+    padding: 0.5em 3.5em;
+    font-size: 20px;
+    height: 40%;
+    margin: 1%;
+    overflow: auto;
+}

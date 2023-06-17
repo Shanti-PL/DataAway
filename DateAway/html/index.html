@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>DECO1800/7180 A3 MVP</title>
+		<link rel="stylesheet" href="../css/index.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+	</head>
+	<body>
+		<article>
+			<h1>DateAway</h1>
+
+		</article>
+      <section>
+			<a href="choosingNPC.html">
+				<button>Start Game</button>
+			</a>
+			<button id="instraction">How To Play</button>
+			<a href="gallery.html">
+				<button>Gallery</button>
+			</a>	
+			<button id="setting">Settings</button>
+
+			<a href="AboutUs.html">
+				<button>About Us</button>
+			</a>
+			
+	  </section>
+
+	  <!-- setting window -->
+	  <div class="setting">
+			<h2>Setting</h2>
+			<img src="../image/return.png" alt="close pop window">
+			<div id="settingContent">
+
+				<form class="settingLayout">
+					<label class="headLabel">Music</label>
+					<div class="options">
+						<div>
+							<input type="radio" id="yes" name="music" value="yes" >
+							<label for="yes">Yes</label>
+						</div>
+						
+						<div>
+							<input type="radio" id="no" name="music" value="no" checked>
+							<label for="No">No</label>
+						</div>
+						
+					</div>
+					
+				</form>
+
+
+				<form class="settingLayout" action="">
+					<label for="volume" class="headLabel">Volume</label>
+					<!-- <audio autoplay="autoplay" src="../music/Jazzhop Love _ Lofi Hip Hop Mix (mp3cut.net).mp3"  controls="controls" loop="loop"></audio> -->
+					<input type="range" id="volume" name="volume" min="0" max="100" step="10">
+				</form>
+				
+				<!-- <form class="settingLayout" action="">
+					<label class="headLabel">Notifications</label>
+
+					<div class="options">
+						<div>
+							<input type="radio" id="Nyes" name="notifications" value="yes" checked>
+						<label for="Nyes">Yes</label>
+						</div>
+						
+						<div>
+							<input type="radio" id="Nno" name="notifications" value="no">
+							<label>No</label>
+						</div>
+					</div>
+					
+					
+				</form> -->
+
+			</div>
+	  </div>
+
+
+	  <div id="howToPlay">
+			<!-- first two blocks -->
+			<div id="firstTwo">
+				<!-- <article> -->
+				<h2 id="firstTwoTitle">How to Play</h2>
+				<!-- </article> -->
+				
+
+				<ul>
+					<li>You must keep at least one heart and guide the NPC to their desired destination. You can make a choice at each session, but if the NPC doesn't like it, you will be deprived of a heart.</li>
+					<li>Don't be concerned! As the game progresses, try to select the NPC's prefered option. The game is over if all three hearts are lost. </li>
+					<li>You can try again the next time the game starts to understand the conversation with the NPC before making a decision.</li>
+				</ul>
+			</div>
+
+			<!-- second two blocks -->
+			<div id="secondTwo">
+				<!-- steps -->
+				<div id="steps">
+					
+					<article>
+						<h3>Step 1: </h3>
+						<p>Choose an NPC you like based on their characteristics for dating.</p>
+					</article>
+
+					<article>
+						<h3>Step 2: </h3>
+						<p>Click option buttons you want to trigger more information by the NPC</p>
+					</article>
+
+					<article>
+						<h3>Step 3:</h3>
+						<p>Enjoy the story, keep your heart, and guide NPCS to their desired destination.</p>
+					</article>
+				</div>
+
+				<article id="tips">
+					<h3>Tips:</h3>
+					<p>Take your time reading the story. The preferences of NPCs are hidden in the dialogue. Try to make decisions based on their preferences.</p>
+				</article>
+			</div>
+
+			<img src="../image/return.png" alt="close pop window">
+	  </div>
+
+
+	  <audio autoplay loop id="BGM">
+			<source src="../music/Jazzhop Love _ Lofi Hip Hop Mix (mp3cut.net).mp3">
+	  </audio>
+
+	  <div id="heart1">
+		<img class =  'heart' src="../image/heart.png" alt="red heart icon">
+	  </div>
+	  <div id="heart2">
+		<img class="hearts" src="../image/hearts.png" alt="red heart icon">
+	  </div>
+	  <div id="heart3">
+		<img class="hearts" src="../image/hearts.png" alt="red heart icon">
+		<!-- https://www.flaticon.com/free-icon/hearts_2338389?term=hearts&page=1&position=37&page=1&position=37&related_id=2338389&origin=search -->
+	  </div>
+	  <div id="heart4">
+		<img class =  'heart' src="../image/heart.png" alt="red heart icon">
+	  </div>
+	  <!-- https://www.flaticon.com/free-icon/hearts_2338389?term=heart&page=1&position=37&page=1&position=37&related_id=2338389&origin=search -->
+	  <script src="../js/index.js"></script>
+	
+	</body>
+	
+</html>
+

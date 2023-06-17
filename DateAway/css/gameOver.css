@@ -1,0 +1,84 @@
+body{
+    background-image: url(../image/brisbane-background.webp);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.heart-setting-bar{
+
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.heart-setting-bar img{
+    width: 4em;
+}
+
+#hearts{
+    width:15em;
+    display: flex;
+    justify-content: space-between;
+}
+
+#over{
+
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+
+#over h1{
+
+    font-size: 6em;
+    color: white;
+    margin: 0;
+    text-shadow: 7px 6px 10px purple;
+    
+}
+
+
+
+#sentence{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 7px 6px 10px purple;
+
+}
+
+
+#buttons{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#buttons button{
+    background-color: blueviolet;
+    color: white;
+    width: 10em;
+    height: 2em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 15px;
+    border: 0;
+    padding: 10px 0;
+}
+#buttons button:hover{
+    background-color:rgb(255, 173, 240);
+    box-shadow: 8px 7px rgb(214, 98, 192);
+}
